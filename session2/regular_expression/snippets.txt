@@ -1,0 +1,48 @@
+
+.       - Any Character Except New Line
+\d      - Digit (0-9)
+\D      - Not a Digit (0-9)
+\w      - Word Character (a-z, A-Z, 0-9, _)
+\W      - Not a Word Character
+\s      - Whitespace (space, tab, newline)
+\S      - Not Whitespace (space, tab, newline)
+
+\b      - Word Boundary
+\B      - Not a Word Boundary
+^       - Beginning of a String
+$       - End of a String
+
+[]      - Matches Characters in brackets
+[^ ]    - Matches Characters NOT in brackets
+|       - Either Or
+( )     - Group
+
+Quantifiers:
+*       - 0 or More
++       - 1 or More
+?       - 0 or One
+{3}     - Exact Number
+{3,4}   - Range of Numbers (Minimum, Maximum)
+
+
+#### Sample Regexs ####
+
+[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+
+
+# Search function
+search()         - Scans a string for a regex match
+match()          - Looks for a regex match at the beginning of a string
+fullmatch()      - Looks for a regex match on an entire string
+findall()        - Returns a list of all regex matches in a string
+finditer()       - Returns an iterator that yields regex matches from a string
+
+# substitution functions
+sub()  - Scans the string for pattern matches, replaces the matching
+         portions of the string with replacement string
+subn() - Same as sub but returns the number of substitutions made
+
+# flags - regular expression modifier
+I - perform case-insensitive matching
+S - makes . match any character, including a newline character
+U - Interprets letters according to the unicode character set, enabled by default in Py3
+M - Makes $ match end of line ^ match start of any lines

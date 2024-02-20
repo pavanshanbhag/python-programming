@@ -1,0 +1,1 @@
+print("This message is from packageA __init__ ")
