@@ -1,6 +1,4 @@
-from . import moduleA
-from . import moduleB
+from . import moduleA, moduleB
 from .moduleA import *
 
-print("packageB imprted")
-
+print("packageB imported")

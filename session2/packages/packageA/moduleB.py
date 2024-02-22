@@ -5,4 +5,4 @@ def module_print():
     """
     Module B Sample print function
     """
-    print("Module B Sample print function from packageA")
+    print("Module B Sample print function from package A")
